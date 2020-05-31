@@ -4,10 +4,13 @@
 
 The final project of the internship was very much informative and provided me with a huge oppurtunity to apply my data analysis and machine learning knowledge on a real world data set.
 
+## Introduction
+
 The **primary objective** of the final task was to find the *most important* features from all the attributes of the dataset which could describe most of the variability in the dataset.
 
 **Evaluation metric** chosen for the analysis was *R-score* metric which accounts for the variability explained by the model.
 
+## Methodology
 The following python libraries were used for the solving the problem:
 - `numpy`
 - `pandas`
@@ -22,6 +25,10 @@ The following procedure was followed in this project:
    4. Train data was used to fit the model and test data was used to test the model based on the *R-score*.
    5. The next step was to eliminate redundant features with the help of **backward elimination** and `statsmodels.api.OLS` function.
 
+## Results
+
+The plot between the true values and predicted values of the test set suggest that there is linear relationship between the independent vaiables and response variables.
+![Regression](/images/regression_line.png)
 
 The final model with the most important features was obtained as<br>
 *final_grade* = -0.0777 - 0.2017(*age*) + 0.3572(*famrel*) + 0.0437(*absences*) + 1.1579(*G1*) + 1.9780(*G2*)
@@ -29,3 +36,14 @@ The final model with the most important features was obtained as<br>
 The *R-score* for the model was obtained to be *0.972* which means that *97%* of variability in the dataset could be explained by the model.
 
 The **Error Analysis** of the model also suggested that the statistical tests performed by the `OLS` model was significant and had very little or no room for errors.
+
+1. The errors are randomly distributed and have constant variance.![Residual Plot](/images/erorr_plot.png)
+2. The errors are *heavy-tailed*, *skewed* and overally conform to <font color = "blue">*normal distribution*</font>.![qqplot](/images/qqplot_error_norm.png)
+
+## Conclusion
+
+ 1. Students with age over 18 years, tend to obtain low grades than others.![Age](/images/age_plot.png)
+ 2. Students with a Family Relation of 3 or more tend to perform better than other students.![femrel](/images/famrel_plot.png)
+ 3. Students having a Family Relation of 4, tend to have higher number of absents than others.![absences](/images/absences_famrel.png)
+ 4. Maximum student following *studytime* 3(5 to 10 hrs) and 4(> 10hrs) have *final_grade* over 30.![studytime](/images/studytime.png)
+ 5. Amount of alcohol consumption is more in weekends than in weekdays.![alcohol consumption](/images/alcohol.png)
