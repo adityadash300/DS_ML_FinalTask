@@ -4,6 +4,8 @@
 
 The final project of the internship was very much informative and provided me with a huge oppurtunity to apply my data analysis and machine learning knowledge on a real world data set.
 
+************
+
 ## Introduction
 
 The **primary objective** of the final task was to find the *most important* features from all the attributes of the dataset which could describe most of the variability in the dataset.
