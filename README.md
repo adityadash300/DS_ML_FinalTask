@@ -6,6 +6,9 @@ The final project of the internship was very much informative and provided me wi
 
 ## Table of Contents
 1. [Introduction](#introduction)
+2. [Methodology](#methodology)
+3. [Results](#results)
+4. [Conclusion](#conclusion)
 
 ************
 
